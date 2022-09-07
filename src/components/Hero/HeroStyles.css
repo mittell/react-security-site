@@ -10,7 +10,7 @@
 }
 
 .hero .content {
-	height: 75vh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -24,6 +24,10 @@
 
 .hero .blue {
 	color: var(--primary-color);
+}
+
+.hero button {
+	cursor: pointer;
 }
 
 @media screen and (max-width: 940px) {
