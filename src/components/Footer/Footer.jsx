@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { SiDatabricks } from 'react-icons/si';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import './FooterStyles.css';
@@ -10,7 +12,7 @@ import {
 	FiDribbble,
 	FiGithub,
 } from 'react-icons/fi';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Footer = () => {
 	return (
@@ -18,11 +20,13 @@ const Footer = () => {
 			<div className='container'>
 				<div className='top'>
 					<div className='logo-footer'>
-						<SiDatabricks className='icon' />
+						<Link to='/'>
+							<SiDatabricks className='icon' />
+						</Link>
 						<h2>Secured.</h2>
 					</div>
 
-					<Link
+					<ScrollLink
 						activeClass='active'
 						to='top'
 						spy={true}
@@ -30,7 +34,7 @@ const Footer = () => {
 						duration={500}
 					>
 						<BsFillArrowUpCircleFill className='icon' />
-					</Link>
+					</ScrollLink>
 				</div>
 				<div className='col-container'>
 					<div className='col'>

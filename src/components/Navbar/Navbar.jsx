@@ -16,7 +16,9 @@ const Navbar = () => {
 		<div name='top' className='navbar'>
 			<div className='container'>
 				<div className='logo'>
-					<SiDatabricks className='icon' />
+					<Link to='/'>
+						<SiDatabricks className='icon' />
+					</Link>
 					<h1>Secured.</h1>
 				</div>
 				<ul className={nav ? 'nav-menu active' : 'nav-menu'}>
